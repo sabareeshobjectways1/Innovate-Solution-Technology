@@ -1,5 +1,18 @@
 import { motion } from 'framer-motion';
 
+// Define interfaces for our data types
+interface Service {
+  title: string;
+  description: string;
+  image: string;
+  features?: string[];
+}
+
+interface Industry {
+  name: string;
+  image: string;
+}
+
 function Services() {
   return (
     <div className="min-h-screen bg-[#10171f] text-white">
@@ -46,7 +59,7 @@ function Services() {
                 <p className="text-gray-300 mb-4">{service.description}</p>
                 {service.features && (
                   <ul className="list-disc list-inside text-gray-300 space-y-2">
-                    {service.features.map((feature, idx) => (
+                    {service.features.map((feature: string, idx: number) => (
                       <li key={idx}>{feature}</li>
                     ))}
                   </ul>
@@ -92,7 +105,7 @@ function Services() {
   );
 }
 
-const services = [
+const services: Service[] = [
   {
     title: "IT Consulting & Strategy",
     description: "Expert guidance to align technology with your business objectives, helping you identify opportunities for growth and streamline processes.",
@@ -140,7 +153,7 @@ const services = [
   }
 ];
 
-const industries = [
+const industries: Industry[] = [
   {
     name: "Retail & E-commerce",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8"
