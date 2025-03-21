@@ -27,7 +27,7 @@ function Navbar() {
               <img src="/vect.svg" alt="Logo" className="h-10 w-10" />
               <div className="ml-2">
                 <span className="text-xl font-bold">IST</span>
-                <span className="text-xs block text-gray-400">Innovate Solution Technology</span>
+                <span className="text-xs block text-gray-400">Inovating  Solution Technology</span>
               </div>
             </button>
           </div>

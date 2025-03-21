@@ -39,7 +39,7 @@ function Careers() {
         >
           <h1 className="text-4xl font-bold mb-4">Join Our Team</h1>
           <p className="text-gray-300">
-            A career with Innovate Solution Technology offers an exciting blend of variety, depth, and diverse experiences.
+            A career with Inovating  Solution Technology offers an exciting blend of variety, depth, and diverse experiences.
           </p>
         </motion.div>
 

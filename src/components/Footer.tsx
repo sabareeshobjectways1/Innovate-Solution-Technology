@@ -17,7 +17,7 @@ function Footer() {
               <img src="/vect.svg" alt="Logo" className="h-8 w-8" />
               <div className="ml-2">
                 <span className="text-lg font-bold">IST</span>
-                <span className="text-xs block text-gray-400">Innovate Solution Technology</span>
+                <span className="text-xs block text-gray-400">Inovating  Solution Technology</span>
               </div>
             </button>
             <p className="text-gray-400 text-sm">
@@ -70,7 +70,7 @@ function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700">
           <p className="text-center text-gray-300">
-            © {new Date().getFullYear()} Innovate Solution Technology. All rights reserved.
+            © {new Date().getFullYear()} Inovating  Solution Technology. All rights reserved.
           </p>
         </div>
       </div>

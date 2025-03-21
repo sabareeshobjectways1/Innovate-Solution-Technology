@@ -19,7 +19,7 @@ function Contact() {
     
     try {
       // Create mailto URL with form data
-      const mailtoUrl = `mailto:contact@innovatesolution.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      const mailtoUrl = `mailto:contact@Inovating solution.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
       )}`;
       
@@ -130,8 +130,8 @@ function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <a href="mailto:contact@innovatesolution.com" className="text-gray-300 hover:text-[#01b4db] transition-colors">
-                        contact@innovatesolution.com
+                      <a href="mailto:contact@Inovating solution.com" className="text-gray-300 hover:text-[#01b4db] transition-colors">
+                        contact@Inovating solution.com
                       </a>
                     </div>
                   </div>

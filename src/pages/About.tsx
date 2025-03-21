@@ -35,10 +35,10 @@ function About() {
             <div>
               <h1 className="text-4xl font-bold mb-8">About Us</h1>
               <p className="text-lg text-gray-300 mb-6">
-                Welcome to Innovate Solution Technology, where innovation meets excellence! We are a forward-thinking service-based company dedicated to delivering cutting-edge technology solutions tailored to your unique needs.
+                Welcome to Inovating  Solution Technology, where innovation meets excellence! We are a forward-thinking service-based company dedicated to delivering cutting-edge technology solutions tailored to your unique needs.
               </p>
               <p className="text-lg text-gray-300">
-                At Innovate Solution Technology, we believe in harnessing the power of technology to drive transformation and empower businesses. Our team of skilled professionals specializes in providing scalable, efficient, and cost-effective solutions across various domains.
+                At Inovating  Solution Technology, we believe in harnessing the power of technology to drive transformation and empower businesses. Our team of skilled professionals specializes in providing scalable, efficient, and cost-effective solutions across various domains.
               </p>
             </div>
             <div>
