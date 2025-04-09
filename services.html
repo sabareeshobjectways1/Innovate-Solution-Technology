@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- *** Updated title *** -->
+	<title>Our Services - Inovate Solution Technology</title>
+	<!-- *** Updated description *** -->
+	<meta name="description" content="Explore the comprehensive IT services offered by Inovate Solution Technology (IST), including IT Consulting, Software Development, Cloud Solutions, Digital Marketing, Cybersecurity, and more.">
+	<!-- *** Updated keywords *** -->
+	<meta name="keywords" content="IT services, IT consulting, software development, cloud solutions, digital marketing, mobile development, web development, API integration, data analytics, AI, cybersecurity, managed IT services, IST, Inovate Solution Technology, Madurai">
+	<meta name="author" content="Inovate Solution Technology">
+	<!-- TODO: Replace with your actual IST favicon -->
+	<link rel="shortcut icon" href="assets/img/logo/ficon.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS Includes -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css"> <!-- Using FontAwesome 5 -->
+	<link rel="stylesheet" href="assets/css/flaticon.css"> <!-- Check if used, otherwise remove -->
+	<link rel="stylesheet" href="assets/css/animate.css"> <!-- For WOW animations -->
+	<link rel="stylesheet" href="assets/css/video.min.css"> <!-- If using video backgrounds -->
+	<link rel="stylesheet" href="assets/css/slick-theme.css"> <!-- For Slick Slider -->
+	<link rel="stylesheet" href="assets/css/slick.css"> <!-- For Slick Slider -->
+	<link rel="stylesheet" href="assets/css/nice-select.css"> <!-- For custom select dropdowns -->
+	<link rel="stylesheet" href="assets/css/rs6.css"> <!-- For Revolution Slider (if used elsewhere) -->
+	<link rel="stylesheet" href="assets/css/roundslider.css"> <!-- If using round sliders -->
+	<link rel="stylesheet" href="assets/css/global.css"> <!-- Template global styles -->
+	<link rel="stylesheet" href="assets/css/style.css"> <!-- Template main stylesheet -->
+
+	<!-- Add a custom CSS file for overrides or specific styles if needed -->
+	<!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+
+	<style>
+		/* Simple style for theme color (adjust hex code as needed) */
+		.theme-color {
+			color: #ff8700; /* Example Orange Theme Color */
+		}
+		.theme-bg {
+			background-color: #ff8700;
+		}
+		/* Ensure buttons look good */
+		.ins-btn, .in-header-get-btn a {
+			display: inline-block;
+			padding: 12px 30px; /* Adjust padding */
+			background-color: #ff8700; /* Theme color background */
+			color: #ffffff !important; /* White text */
+			border-radius: 5px; /* Slightly rounded corners */
+			font-weight: 600; /* Medium-bold text */
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease;
+			border: none;
+			text-align: center;
+		}
+		.ins-btn:hover, .in-header-get-btn a:hover {
+			background-color: #e07000; /* Darker shade on hover */
+			color: #ffffff !important;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+		}
+		 /* Header Button Specifics */
+		.in-header-get-btn a {
+			 padding: 10px 25px; /* Slightly smaller padding for header */
+		}
+		.in-header-get-btn a i {
+			margin-left: 8px;
+			transition: transform 0.3s ease;
+		}
+		.in-header-get-btn a:hover i {
+			transform: translateX(5px);
+		}
+		/* Adjustments for better spacing */
+		.pt-80 { padding-top: 80px; }
+		.pb-80 { padding-bottom: 80px; }
+		.pt-100 { padding-top: 100px; }
+		.pb-100 { padding-bottom: 100px; }
+		.mb-40 { margin-bottom: 40px; }
+		.mt-40 { margin-top: 40px; }
+        .mb-50 { margin-bottom: 50px; }
+
+		/* Style for feature/service items */
+		.ins-feature-item {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+			margin-bottom: 30px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Make cards in a row equal height */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content top */
+		}
+		.ins-feature-item:hover {
+			 transform: translateY(-5px);
+			 box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		}
+		.ins-feature-item .feature-icon {
+			font-size: 40px;
+			margin-bottom: 20px;
+			color: #ff8700; /* Theme Color */
+		}
+		 .ins-feature-item h4 {
+			font-size: 1.3rem;
+			margin-bottom: 15px;
+			color: #0f0f2d; /* Dark heading color from template */
+		 }
+		 .ins-feature-item p {
+			 color: #6c757d; /* Muted text color */
+             flex-grow: 1; /* Allow description to push footer down */
+		 }
+
+        /* Style for Industry Items */
+        .ins-industry-item {
+            background-color: #ffffff;
+            padding: 25px 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .ins-industry-item:hover {
+             transform: translateY(-5px);
+             box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .ins-industry-item .industry-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+            color: #ff8700; /* Theme Color */
+        }
+        .ins-industry-item h5 {
+            font-size: 1.1rem;
+            color: #0f0f2d;
+            margin-bottom: 0;
+        }
+
+        /* Page Title Section Styles */
+        .ins-page-title-section {
+            position: relative;
+            padding: 120px 0;
+            background-size: cover;
+            background-position: center center;
+            color: #fff;
+            text-align: center;
+        }
+        .ins-page-title-section::before { /* Overlay for better text visibility */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 15, 45, 0.6); /* Dark overlay */
+            z-index: 1;
+        }
+        .ins-page-title-inner {
+            position: relative;
+            z-index: 2;
+        }
+        .ins-page-title-inner h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+         .ins-page-title-inner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+	</style>
+
+</head>
+<body class="insurin-main">
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+
+<!-- Start of header section
+============================================= -->
+<header id="in-header" class="in-header-section header-style-five">
+	<div class="in-header-top-content d-flex justify-content-between">
+		<div class="top-cta-info">
+			<img src="assets/img/shape/t-icon1.png" alt=""> Hot Line: +91 7200699077 <!-- Updated Phone -->
+		</div>
+		<div class="top-slug-more">
+			<!-- Removed insurance promo message -->
+		</div>
+
+	</div>
+	<div class="in-header-main-menu-content d-flex align-items-center justify-content-between">
+		<div class="brand-logo">
+			<!-- *** MODIFIED LINE BELOW: Increased max-height from 50px to 65px *** -->
+			<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo" style="max-height: 65px;"></a> <!-- TODO: Add IST Logo. Adjusted style for size. -->
+            <!-- Fallback text if image fails: <a href="index.html" style="font-size: 24px; font-weight: bold; color: #0f0f2d;">IST</a> -->
+		</div>
+		<div class="in-header-menu-cta-sidebar d-flex align-items-center justify-content-center">
+			<div class="main-navigation-menu">
+				<nav class="in-main-navigation-area clearfix ul-li">
+					<ul id="main-nav" class="nav navbar-nav clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li class="current-menu-item"><a href="services.html">Services</a></li> <!-- Active state might need JS -->
+						<!-- <li><a href="contact.html">Contact</a></li> --> <!-- Contact is now the 'Get In Touch' button -->
+						<!-- Removed complex dropdowns -->
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+		<div class="in-header-cart-get-btn d-flex align-items-center">
+			<!-- Removed Cart -->
+			<div class="in-header-get-btn">
+				<a href="contact.html">Get In Touch <i class="fal fa-long-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="mobile_menu position-relative">
+		<div class="mobile_menu_button open_mobile_menu">
+			<i class="fal fa-bars"></i>
+		</div>
+		<div class="mobile_menu_wrap">
+			<div class="mobile_menu_overlay open_mobile_menu"></div>
+			<div class="mobile_menu_content">
+				<div class="mobile_menu_close open_mobile_menu">
+					<i class="fal fa-times"></i>
+				</div>
+				<div class="m-brand-logo">
+					<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo"></a> <!-- TODO: Add Mobile IST Logo -->
+                    <!-- Fallback text: <a href="index.html" style="font-size: 20px; font-weight: bold; color: #0f0f2d;">IST</a> -->
+				</div>
+				
+				<nav class="mobile-main-navigation clearfix ul-li">
+					<ul id="m-main-nav" class="nav navbar-nav clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<!-- Simplified mobile menu -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- /Mobile-Menu -->
+	</div>
+</header>
+<!-- Search field -->
+<div class="search-body">
+	<div class="search-form">
+		<form action="#" class="search-form-area">
+			<input class="search-input" type="search" placeholder="Search Here...">
+			<button type="submit" class="search-btn1">
+				<i class="fas fa-search"></i>
+			</button>
+		</form>
+		<div class="outer-close text-center search-btn">
+			<i class="far fa-times-circle"></i> <!-- Changed icon slightly -->
+		</div>
+	</div>
+</div>
+<!-- Sidebar -->
+<div class="xs-sidebar-group info-group">
+	<div class="xs-overlay xs-bg-black"></div> <!-- Removed loader -->
+	<div class="xs-sidebar-widget">
+		<div class="sidebar-widget-container">
+			<div class="widget-heading">
+				<a href="#" class="close-side-widget">
+					<i class="fas fa-times"></i> <!-- Using FontAwesome icon -->
+				</a>
+			</div>
+			<div class="sidebar-textwidget">
+				<div class="sidebar-info-contents headline pera-content">
+					<div class="content-inner">
+						<div class="logo mb-4">
+							<!-- TODO: Replace with your actual IST sidebar logo -->
+							<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo" style="max-height: 50px;"></a>
+						</div>
+						<div class="content-box mb-4">
+							<h5>About Us</h5>
+							<p class="text">Inovate Solution Technology (IST) is your trusted partner in IT excellence. We empower businesses through innovative technology solutions, including IT consulting, custom software development, cloud services, and cybersecurity.</p>
+						</div>
+						<div class="gallery-box ul-li mb-4">
+							<h5>Gallery</h5>
+							<!-- TODO: replace images with relevant IST visuals (office, team, projects) -->
+							<ul class="zoom-gallery row g-2">
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+1" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+1"><img src="https://via.placeholder.com/150x150.png?text=IST+1" alt="Gallery Image 1" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+2" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+2"><img src="https://via.placeholder.com/150x150.png?text=IST+2" alt="Gallery Image 2" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+3" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+3"><img src="https://via.placeholder.com/150x150.png?text=IST+3" alt="Gallery Image 3" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+4" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+4"><img src="https://via.placeholder.com/150x150.png?text=IST+4" alt="Gallery Image 4" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+5" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+5"><img src="https://via.placeholder.com/150x150.png?text=IST+5" alt="Gallery Image 5" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="https://via.placeholder.com/500x500.png?text=IST+Gallery+6" data-source="https://via.placeholder.com/800x800.png?text=IST+Gallery+6"><img src="https://via.placeholder.com/150x150.png?text=IST+6" alt="Gallery Image 6" class="img-fluid rounded"></a></li>
+							</ul>
+						</div>
+						<div class="content-box">
+							<h5>Connect With Us</h5>
+							<!-- TODO: update hrefs to actual IST social profiles -->
+							<ul class="social-box d-flex flex-wrap">
+								<li class="me-2 mb-2"><a href="#" class="fab fa-facebook-f" target="_blank" aria-label="Facebook"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-twitter" target="_blank" aria-label="Twitter"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-linkedin-in" target="_blank" aria-label="LinkedIn"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-instagram" target="_blank" aria-label="Instagram"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-youtube" target="_blank" aria-label="YouTube"></a></li>
+							</ul>
+						</div>
+                        <div class="content-box mt-4">
+                            <h5>Contact Info</h5>
+                            <p><i class="fas fa-map-marker-alt me-2 theme-color"></i> Jankit Nagar B Zone, Kadachanenthal, Madurai</p>
+                            <p><a href="tel:+917200699077"><i class="fas fa-phone-alt me-2 theme-color"></i> +91 7200699077</a></p>
+                            <p><a href="mailto:Innovatesolutiontechnology@gmail.com"><i class="fas fa-envelope me-2 theme-color"></i> Innovatesolutiontechnology@gmail.com</a></p>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of header section -->
+
+<!-- Start of Page Title Section
+	============================================= -->
+<!-- TODO: Replace background image with a relevant, high-quality stock photo -->
+<section id="ins-services-hero" class="ins-page-title-section" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+    <div class="ins-page-title-inner">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive technology solutions for your business needs</p>
+        </div>
+    </div>
+</section>
+<!-- End of Page Title section -->
+
+<!-- Start of Services List Section
+	============================================= -->
+<section id="ins-services-list" class="ins-services-section pt-100 pb-70">
+    <div class="container">
+        <div class="ins-section-title-six text-center mb-50 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+            <div class="ins-subtitle text-uppercase theme-color">
+                <i class="fas fa-cogs me-1"></i> What We Offer
+            </div>
+            <h2>Explore Our Comprehensive Services</h2>
+            <p>Tailored solutions designed to drive growth and efficiency for your business.</p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Service: IT Consulting & Strategy -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" id="service-consulting">
+                <div class="ins-feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>IT Consulting & Strategy</h4>
+                    <p>Expert guidance to align technology with your business objectives, helping you identify opportunities for growth and streamline processes.</p>
+                </div>
+            </div>
+            <!-- Service: Software Development -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms" id="service-software">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Software Development</h4>
+                    <p>Custom applications and enterprise-grade systems designed and developed to meet your unique requirements.</p>
+                </div>
+            </div>
+            <!-- Service: Cloud Solutions -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms" id="service-cloud">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Cloud Solutions</h4>
+                    <p>Comprehensive cloud services including migration, deployment, and management to enhance scalability and reduce costs.</p>
+                </div>
+            </div>
+             <!-- Service: Digital Marketing -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms" id="service-digital">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4>Digital Marketing</h4>
+                    <p>Creating engaging stories and delivering impactful results in the digital world to enhance your brand's online presence.</p>
+                </div>
+            </div>
+             <!-- Service: Mobile & Web Development -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms" id="service-mobile-web">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile & Web Development</h4>
+                    <p>Creating intuitive, user-friendly mobile and web applications that enhance user experience and drive business growth.</p>
+                </div>
+            </div>
+             <!-- Service: API Integration -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms" id="service-api">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-link"></i>
+                    </div>
+                    <h4>API Integration</h4>
+                    <p>Seamless API integration services to connect your systems, applications, and third-party services.</p>
+                </div>
+            </div>
+            <!-- Service: Data Analytics & AI -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms" id="service-data-ai">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Data Analytics & AI</h4>
+                    <p>Advanced analytics and AI-powered tools to help you gain actionable insights and make smarter business decisions.</p>
+                </div>
+            </div>
+            <!-- Service: Cybersecurity -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1000ms" id="service-security">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Cybersecurity</h4>
+                    <p>Comprehensive protection against evolving threats, including risk assessments and advanced threat detection.</p>
+                </div>
+            </div>
+            <!-- Service: Managed IT Services -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="1000ms" id="service-managed">
+                 <div class="ins-feature-item">
+                    <div class="feature-icon">
+                         <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Managed IT Services</h4>
+                    <p>Proactive IT support and maintenance services to ensure your systems operate seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Services List Section -->
+
+<!-- Start of Industries Served Section
+	============================================= -->
+<section id="ins-industries-served" class="ins-industries-section pt-80 pb-70" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="ins-section-title-six text-center mb-50 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+            <div class="ins-subtitle text-uppercase theme-color">
+                <i class="fas fa-industry me-1"></i> Our Expertise
+            </div>
+            <h2>Industries We Serve</h2>
+            <p>Providing specialized technology solutions across various sectors.</p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Industry: Retail & E-commerce -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h5>Retail & E-commerce</h5>
+                </div>
+            </div>
+            <!-- Industry: Healthcare -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h5>Healthcare</h5>
+                </div>
+            </div>
+            <!-- Industry: Education -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h5>Education</h5>
+                </div>
+            </div>
+            <!-- Industry: Finance & Banking -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-university"></i> <!-- Changed from fa-landmark for better recognition -->
+                    </div>
+                    <h5>Finance & Banking</h5>
+                </div>
+            </div>
+            <!-- Industry: Manufacturing -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h5>Manufacturing</h5>
+                </div>
+            </div>
+            <!-- Industry: Logistics & Supply Chain -->
+            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">
+                <div class="ins-industry-item">
+                    <div class="industry-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h5>Logistics & Supply Chain</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Industries Served Section -->
+
+
+<!-- Start of Office Location / CTA Section (Reused from About Page Template)
+	============================================= -->
+<section id="ins-office-location" class="ins-office-location-section pt-80 pb-100" style="background-color: #f1f5f8;"> <!-- Slightly different background -->
+    <div class="container">
+        <div class="ins-section-title-six text-center mb-50 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+            <div class="ins-subtitle text-uppercase theme-color">
+                <i class="fas fa-map-marker-alt me-1"></i> Connect With Us
+            </div>
+            <h2>Ready to Elevate Your Business?</h2>
+             <p>Visit our office or get in touch to discuss how our services can help you achieve your goals.</p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1000ms">
+                <div class="ins-office-info bg-white p-4 p-lg-5 rounded shadow-sm mb-4 mb-lg-0 text-center text-lg-start">
+                    <h4 class="mb-3">Our Location</h4>
+                    <p><i class="fas fa-map-pin me-2 theme-color"></i> Jankit Nagar B Zone, Kadachanenthal, Madurai, Tamil Nadu, India</p>
+                    <h4 class="mt-4 mb-3">Contact Details</h4>
+                    <p><i class="fas fa-phone-alt me-2 theme-color"></i> Phone: <a href="tel:+917200699077">+91 7200699077</a></p>
+                    <p><i class="fas fa-envelope me-2 theme-color"></i> Email: <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a></p>
+                    <div class="ins-btns mt-4 text-center text-lg-start">
+                        <a href="contact.html" class="ins-btn">Contact Us Online <i class="fas fa-paper-plane ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1000ms">
+                 <!-- TODO: Replace with your actual Google Maps embed code or verify the existing one is correct -->
+                 <div class="google-map-embed rounded overflow-hidden shadow-sm" style="aspect-ratio: 16 / 9;">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.651046818007!2d78.1528306748929!3d9.962636290136437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c7bb6a9e2d69%3A0x6c57f06418ce6613!2sKadachanendal%2C%20Madurai%2C%20Tamil%20Nadu%20625107!5e0!3m2!1sen!2sin!4v1678886543210!5m2!1sen!2sin"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="IST Office Location">
+                    </iframe>
+                 </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!-- End of Office Location / CTA Section -->
+
+<!-- Start of Footer section
+	============================================= -->
+<footer id="ins-footer" class="ins-footer-section position-relative pt-5 bg-light"> <!-- Added padding top & bg-light -->
+	<!-- Shapes kept -->
+	<span class="ins-footer-shape1 position-absolute"><img src="assets/img/shape/fot-sh1.png" alt=""></span>
+	<span class="ins-footer-shape2 position-absolute"><img src="assets/img/shape/fot-sh2.png" alt=""></span>
+	<div class="container">
+		<div class="ins-footer-logo-newslatter d-flex flex-wrap align-items-center justify-content-between pb-5 border-bottom mb-5"> <!-- Made flexible and added padding/border -->
+			<div class="ins-footer-email mb-3 mb-lg-0">
+				Email us at: <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a> <!-- Updated Email -->
+			</div>
+			<div class="ins-footer-logo position-relative text-center mb-3 mb-lg-0">
+                <!-- Using Text instead of Logo image as per template -->
+                <h4 class="mt-2 mb-0">Inovate Solution Technology</h4>
+				<p class="mb-0 small">Empowering businesses through innovative technology solutions.</p>
+			</div>
+            <!-- Placeholder for potential newsletter signup if needed -->
+             <div class="ins-footer-social">
+                <!-- Social links moved down to widgets -->
+             </div>
+		</div>
+
+        <!-- Footer Widgets/Links -->
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                 <div class="footer-widget">
+                    <h5 class="widget-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <!-- Linking to IDs within the services page -->
+                        <li><a href="services.html#service-consulting">IT Consulting</a></li>
+                        <li><a href="services.html#service-software">Software Development</a></li>
+                        <li><a href="services.html#service-cloud">Cloud Solutions</a></li>
+                        <li><a href="services.html#service-digital">Digital Marketing</a></li>
+                        <li><a href="services.html#service-mobile-web">Mobile & Web Dev</a></li>
+                        <li><a href="services.html#service-api">API Integration</a></li>
+                        <li><a href="services.html#service-data-ai">Data Analytics & AI</a></li>
+                        <li><a href="services.html#service-security">Cybersecurity</a></li>
+                        <li><a href="services.html#service-managed">Managed IT Services</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                 <div class="footer-widget">
+                    <h5 class="widget-title">Contact Us</h5>
+                    <address class="mb-0">
+                        Jankit Nagar B Zone<br>
+                        Kadachanenthal, Madurai<br>
+                        <abbr title="Phone">P:</abbr> <a href="tel:+917200699077">+91 7200699077</a><br>
+                        <abbr title="Email">E:</abbr> <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a>
+                    </address>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                 <div class="footer-widget">
+                     <h5 class="widget-title">Follow Us</h5>
+                     <!-- Reuse social icons or simple links -->
+                     <!-- TODO: Update # links with actual social media profile URLs -->
+                     <ul class="social-box list-unstyled d-flex">
+                        <li class="me-3"><a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a></li>
+                        <li class="me-3"><a href="#" class="fab fa-twitter" aria-label="Twitter"></a></li>
+                        <li class="me-3"><a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a></li>
+                        <li class="me-3"><a href="#" class="fab fa-instagram" aria-label="Instagram"></a></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+
+		<div class="ins-footer-copyright d-flex flex-wrap justify-content-between pt-4 pb-4 border-top"> <!-- Added padding & border -->
+			<div class="ins-footer-copyright-text mb-2 mb-md-0">
+				© 2025 <a href="index.html">Inovate Solution Technology</a>. All rights reserved. <!-- Updated Copyright -->
+			</div>
+			<div class="ins-copy-right-menu ul-li">
+				<ul class="list-inline mb-0">
+					<li class="list-inline-item me-3"><a href="#">Terms and conditions</a></li>
+					<li class="list-inline-item"><a href="#">Privacy policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End of Footer section -->
+
+<!-- JS Library Imports -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script> <!-- If using jQuery UI features -->
+<script src="assets/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap 5 includes Popper -->
+<script src="assets/js/appear.js"></script> <!-- For element appearance triggers -->
+<script src="assets/js/slick.min.js"></script> <!-- Use .min.js for production -->
+<script src="assets/js/wow.min.js"></script> <!-- For animations -->
+<script src="assets/js/knob.js"></script> <!-- If using Knob charts -->
+<script src="assets/js/jquery.filterizr.js"></script> <!-- If using Filterizr -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script> <!-- For layout after images load -->
+<script src="assets/js/rbtools.min.js"></script> <!-- Revolution Slider tools -->
+<script src="assets/js/rs6.min.js"></script> <!-- Revolution Slider main -->
+<script src="assets/js/jarallax.js"></script> <!-- For parallax backgrounds -->
+<script src="assets/js/isotope.pkgd.min.js"></script> <!-- For masonry layouts -->
+<script src="assets/js/jquery.counterup.min.js"></script> <!-- For counter animations -->
+<script src="assets/js/waypoints.min.js"></script> <!-- Dependency for CounterUp -->
+<script src="assets/js/jquery.marquee.min.js"></script> <!-- For text marquees -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script> <!-- For image/video popups -->
+<script src="assets/js/jquery.nice-select.min.js"></script> <!-- For custom selects -->
+<script src="assets/js/roundslider.min.js"></script> <!-- Use .min.js for production -->
+<script src="assets/js/script.js"></script> <!-- Your template's main script file -->
+
+<script>
+    // Initialize WOW.js (likely already done in script.js, but safe to call again)
+     new WOW().init();
+
+    // Optional: Add specific JS for this page if needed
+    // $(document).ready(function(){
+        // Example: Smooth scroll for anchor links in the footer service list
+        // $('.footer-links a[href^="services.html#"]').on('click', function(event) {
+        //     var target = $(this.getAttribute('href').substring(this.getAttribute('href').indexOf('#')));
+        //     if( target.length ) {
+        //         event.preventDefault();
+        //         $('html, body').stop().animate({
+        //             scrollTop: target.offset().top - 100 // Adjust offset for fixed header
+        //         }, 800);
+        //     }
+        // });
+    // });
+</script>
+
+</body>
+</html>

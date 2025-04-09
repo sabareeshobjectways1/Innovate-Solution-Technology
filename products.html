@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- *** Updated title *** -->
+	<title>Our Products - Inovate Solution Technology</title>
+	<!-- *** Updated description *** -->
+	<meta name="description" content="Explore innovative software products from Inovate Solution Technology (IST), including our Deals Finder App, OptimusGPT AI (coming soon), and Audio Book Reader (coming soon).">
+	<!-- *** Updated keywords *** -->
+	<meta name="keywords" content="IST products, software products, deals finder app, AI chatbot, OptimusGPT, audio book reader, technology solutions, Madurai, IST, Inovate Solution Technology">
+	<meta name="author" content="Inovate Solution Technology">
+	<!-- TODO: Replace with your actual IST favicon -->
+	<link rel="shortcut icon" href="assets/img/logo/ficon.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS Includes -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css"> <!-- Using FontAwesome 5 -->
+	<link rel="stylesheet" href="assets/css/flaticon.css"> <!-- Check if used, otherwise remove -->
+	<link rel="stylesheet" href="assets/css/animate.css"> <!-- For WOW animations -->
+	<link rel="stylesheet" href="assets/css/video.min.css"> <!-- If using video backgrounds -->
+	<link rel="stylesheet" href="assets/css/slick-theme.css"> <!-- For Slick Slider -->
+	<link rel="stylesheet" href="assets/css/slick.css"> <!-- For Slick Slider -->
+	<link rel="stylesheet" href="assets/css/nice-select.css"> <!-- For custom select dropdowns -->
+	<link rel="stylesheet" href="assets/css/rs6.css"> <!-- For Revolution Slider (if used elsewhere) -->
+	<link rel="stylesheet" href="assets/css/roundslider.css"> <!-- If using round sliders -->
+	<link rel="stylesheet" href="assets/css/global.css"> <!-- Template global styles -->
+	<link rel="stylesheet" href="assets/css/style.css"> <!-- Template main stylesheet -->
+
+	<!-- Add a custom CSS file for overrides or specific styles if needed -->
+	<!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+
+	<style>
+		/* Simple style for theme color (adjust hex code as needed) */
+		.theme-color {
+			color: #ff8700; /* Example Orange Theme Color */
+		}
+		.theme-bg {
+			background-color: #ff8700;
+		}
+		/* Ensure buttons look good */
+		.ins-btn, .in-header-get-btn a {
+			display: inline-block;
+			padding: 12px 30px; /* Adjust padding */
+			background-color: #ff8700; /* Theme color background */
+			color: #ffffff !important; /* White text */
+			border-radius: 5px; /* Slightly rounded corners */
+			font-weight: 600; /* Medium-bold text */
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease;
+			border: none;
+			text-align: center;
+		}
+		.ins-btn:hover, .in-header-get-btn a:hover {
+			background-color: #e07000; /* Darker shade on hover */
+			color: #ffffff !important;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+		}
+		 /* Header Button Specifics */
+		.in-header-get-btn a {
+			 padding: 10px 25px; /* Slightly smaller padding for header */
+		}
+		.in-header-get-btn a i {
+			margin-left: 8px;
+			transition: transform 0.3s ease;
+		}
+		.in-header-get-btn a:hover i {
+			transform: translateX(5px);
+		}
+		/* Adjustments for better spacing */
+		.pt-80 { padding-top: 80px; }
+		.pb-80 { padding-bottom: 80px; }
+		.pt-100 { padding-top: 100px; }
+		.pb-100 { padding-bottom: 100px; }
+		.mb-40 { margin-bottom: 40px; }
+		.mt-40 { margin-top: 40px; }
+        .pb-70 { padding-bottom: 70px; }
+
+		/* Style for Product Cards (adapted from feature items) */
+		.ist-product-item {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+			margin-bottom: 30px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Make cards equal height */
+		}
+		.ist-product-item:hover {
+			 transform: translateY(-5px);
+			 box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		}
+		.ist-product-item .product-icon {
+			font-size: 40px;
+			margin-bottom: 20px;
+			color: #ff8700; /* Theme Color */
+		}
+		 .ist-product-item h4 {
+			font-size: 1.3rem;
+			margin-bottom: 15px;
+			color: #0f0f2d; /* Dark heading color from template */
+		 }
+		 .ist-product-item p {
+			 color: #6c757d; /* Muted text color */
+             flex-grow: 1; /* Allow text to take available space */
+             margin-bottom: 20px;
+		 }
+         .ist-product-item .badge {
+            font-size: 0.9rem;
+            padding: 0.4em 0.8em;
+            margin-bottom: 15px;
+            display: inline-block; /* Ensure badge takes space */
+         }
+         .ist-product-item .ins-btn { /* Style for buttons within product cards */
+            margin-top: auto; /* Push button to the bottom */
+            padding: 8px 20px; /* Smaller button */
+            font-size: 0.9rem;
+         }
+         .ist-product-item .ins-btn.disabled { /* Style for disabled buttons */
+            background-color: #ccc;
+            cursor: not-allowed;
+            pointer-events: none; /* Prevent clicks */
+         }
+
+        /* Page Title Styles */
+        .ins-breadcrumb-section {
+            background: url('assets/img/bg/bread-bg.jpg') no-repeat center center; /* TODO: Change background */
+            background-size: cover;
+            padding: 120px 0 60px;
+            position: relative;
+        }
+        .ins-breadcrumb-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 15, 45, 0.7); /* Dark overlay */
+            z-index: 1;
+        }
+        .ins-breadcrumb-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+         .ins-breadcrumb-content h2 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 15px;
+         }
+         .ins-breadcrumb-content p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            color: rgba(255, 255, 255, 0.85);
+         }
+        .ins-breadcrumb-menu ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .ins-breadcrumb-menu li {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .ins-breadcrumb-menu li a {
+            color: #ff8700; /* Theme color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .ins-breadcrumb-menu li a:hover {
+            color: #fff;
+        }
+        .ins-breadcrumb-menu li::after {
+            content: '/';
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .ins-breadcrumb-menu li:last-child::after {
+            display: none;
+        }
+	</style>
+
+</head>
+<body class="insurin-main">
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+
+<!-- Start of header section
+============================================= -->
+<header id="in-header" class="in-header-section header-style-five">
+	<div class="in-header-top-content d-flex justify-content-between">
+		<div class="top-cta-info">
+			<img src="assets/img/shape/t-icon1.png" alt=""> Hot Line: +91 7200699077 <!-- Updated Phone -->
+		</div>
+		<div class="top-slug-more">
+			<!-- Removed insurance promo message -->
+		</div>
+	</div>
+	<div class="in-header-main-menu-content d-flex align-items-center justify-content-between">
+		<div class="brand-logo">
+			<!-- *** MODIFIED LINE BELOW: Increased max-height from 50px to 65px *** -->
+			<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo" style="max-height: 65px;"></a> <!-- TODO: Add IST Logo. Adjusted style for size. -->
+			<!-- Fallback text if image fails: <a href="index.html" style="font-size: 24px; font-weight: bold; color: #0f0f2d;">IST</a> -->
+		</div>
+		<div class="in-header-menu-cta-sidebar d-flex align-items-center justify-content-center">
+			<div class="main-navigation-menu">
+				<nav class="in-main-navigation-area clearfix ul-li">
+					<ul id="main-nav" class="nav navbar-nav clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li> <!-- Current Page -->
+						<li><a href="services.html">Services</a></li>
+						<!-- <li><a href="contact.html">Contact</a></li> --> <!-- Contact is now the 'Get In Touch' button -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="in-header-cart-get-btn d-flex align-items-center">
+			<!-- Removed Cart -->
+			<div class="in-header-get-btn">
+				<a href="contact.html">Get In Touch <i class="fal fa-long-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="mobile_menu position-relative">
+		<div class="mobile_menu_button open_mobile_menu">
+			<i class="fal fa-bars"></i>
+		</div>
+		<div class="mobile_menu_wrap">
+			<div class="mobile_menu_overlay open_mobile_menu"></div>
+			<div class="mobile_menu_content">
+				<div class="mobile_menu_close open_mobile_menu">
+					<i class="fal fa-times"></i>
+				</div>
+				<div class="m-brand-logo">
+					<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo"></a> <!-- TODO: Add Mobile IST Logo -->
+					<!-- Fallback text: <a href="index.html" style="font-size: 20px; font-weight: bold; color: #0f0f2d;">IST</a> -->
+				</div>
+
+				<nav class="mobile-main-navigation clearfix ul-li">
+					<ul id="m-main-nav" class="nav navbar-nav clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li> <!-- Current Page -->
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- /Mobile-Menu -->
+	</div>
+</header>
+<!-- Search field -->
+<div class="search-body">
+	<div class="search-form">
+		<form action="#" class="search-form-area">
+			<input class="search-input" type="search" placeholder="Search Here...">
+			<button type="submit" class="search-btn1">
+				<i class="fas fa-search"></i>
+			</button>
+		</form>
+		<div class="outer-close text-center search-btn">
+			<i class="far fa-times-circle"></i> <!-- Changed icon slightly -->
+		</div>
+	</div>
+</div>
+<!-- Sidebar -->
+<div class="xs-sidebar-group info-group">
+	<div class="xs-overlay xs-bg-black"></div> <!-- Removed loader -->
+	<div class="xs-sidebar-widget">
+		<div class="sidebar-widget-container">
+			<div class="widget-heading">
+				<a href="#" class="close-side-widget">
+					<i class="fas fa-times"></i> <!-- Using FontAwesome icon -->
+				</a>
+			</div>
+			<div class="sidebar-textwidget">
+				<div class="sidebar-info-contents headline pera-content">
+					<div class="content-inner">
+						<div class="logo mb-4">
+							<!-- TODO: Replace with your actual IST sidebar logo -->
+							<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo" style="max-height: 50px;"></a>
+						</div>
+						<div class="content-box mb-4">
+							<h5>About Us</h5>
+							<p class="text">Inovate Solution Technology (IST) is your trusted partner in IT excellence. We empower businesses through innovative technology solutions, including IT consulting, custom software development, cloud services, and cybersecurity.</p>
+						</div>
+						<div class="gallery-box ul-li mb-4">
+							<h5>Gallery</h5>
+							<!-- TODO: replace images with relevant IST visuals (office, team, projects) -->
+							<ul class="zoom-gallery row g-2">
+								<li class="col-4"><a href="assets/img/gallery/gl1.png" data-source="assets/img/gallery/gl1.png"><img src="assets/img/gallery/gl1.png" alt="Gallery Image 1" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="assets/img/gallery/gl2.png" data-source="assets/img/gallery/gl2.png"><img src="assets/img/gallery/gl2.png" alt="Gallery Image 2" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="assets/img/gallery/gl3.png" data-source="assets/img/gallery/gl3.png"><img src="assets/img/gallery/gl3.png" alt="Gallery Image 3" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="assets/img/gallery/gl4.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl4.png" alt="Gallery Image 4" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="assets/img/gallery/gl5.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl5.png" alt="Gallery Image 5" class="img-fluid rounded"></a></li>
+								<li class="col-4"><a href="assets/img/gallery/gl6.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl6.png" alt="Gallery Image 6" class="img-fluid rounded"></a></li>
+							</ul>
+						</div>
+						<div class="content-box">
+							<h5>Connect With Us</h5>
+							<!-- TODO: update hrefs to actual IST social profiles -->
+							<ul class="social-box d-flex flex-wrap">
+								<li class="me-2 mb-2"><a href="#" class="fab fa-facebook-f" target="_blank" aria-label="Facebook"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-twitter" target="_blank" aria-label="Twitter"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-linkedin-in" target="_blank" aria-label="LinkedIn"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-instagram" target="_blank" aria-label="Instagram"></a></li>
+								<li class="me-2 mb-2"><a href="#" class="fab fa-youtube" target="_blank" aria-label="YouTube"></a></li>
+							</ul>
+						</div>
+                        <div class="content-box mt-4">
+                            <h5>Contact Info</h5>
+                            <p><i class="fas fa-map-marker-alt me-2 theme-color"></i> Jankit Nagar B Zone, Kadachanenthal, Madurai</p>
+                            <p><a href="tel:+917200699077"><i class="fas fa-phone-alt me-2 theme-color"></i> +91 7200699077</a></p>
+                            <p><a href="mailto:Innovatesolutiontechnology@gmail.com"><i class="fas fa-envelope me-2 theme-color"></i> Innovatesolutiontechnology@gmail.com</a></p>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of header section -->
+
+<!-- Start of Page Title Section
+============================================= -->
+<section id="ins-breadcrumb" class="ins-breadcrumb-section"> <!-- Using a standard breadcrumb structure -->
+    <div class="container">
+        <div class="ins-breadcrumb-content text-center">
+            <h2>Our Products</h2>
+            <p>Explore our innovative products designed to meet your needs.</p>
+            <div class="ins-breadcrumb-menu ul-li">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Products</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Page Title section -->
+
+<!-- Start of Products Section
+============================================= -->
+<section id="ist-products" class="ist-products-section pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <!-- Product 1: Deals/Offers Finder -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <div class="ist-product-item">
+                    <div class="product-icon">
+                        <i class="fas fa-tags"></i> <!-- Icon for deals/tags -->
+                    </div>
+                    <h4>Deals/Offers Finder Application</h4>
+                    <p>Find the best deals and offers on various products and services easily with our intuitive application.</p>
+                    <!-- Assuming this product is available, add a relevant button -->
+                    <!-- <a href="#" class="ins-btn">Explore App <i class="fas fa-long-arrow-alt-right"></i></a> -->
+                    <!-- If no specific link yet: -->
+                    <a href="#" class="ins-btn disabled">Coming Soon <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Product 2: OptimusGPT AI -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                 <div class="ist-product-item">
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i> <!-- Icon for AI/chatbot -->
+                    </div>
+                    <h4>OptimusGPT AI</h4>
+                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                    <p>A powerful AI-powered chatbot capable of answering a wide range of questions and providing personalized recommendations and image processing.</p>
+                    <!-- "Learn More" button, styled as disabled since it's coming soon -->
+                    <a href="#" class="ins-btn disabled">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Product 3: Audio Book Reader -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                 <div class="ist-product-item">
+                    <div class="product-icon">
+                         <i class="fas fa-headphones-alt"></i> <!-- Icon for audio/headphones -->
+                    </div>
+                    <h4>Audio Book Reader Application</h4>
+                     <span class="badge bg-warning text-dark">Coming Soon</span>
+                    <p>A user-friendly application that allows users to listen to audiobooks and podcasts seamlessly.</p>
+                     <!-- Button styled as disabled since it's coming soon -->
+                     <a href="#" class="ins-btn disabled">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Products Section -->
+
+
+<!-- Start of Footer section
+============================================= -->
+<footer id="ins-footer" class="ins-footer-section position-relative pt-5 bg-light"> <!-- Added padding top & bg-light -->
+	<!-- Shapes kept -->
+	<span class="ins-footer-shape1 position-absolute"><img src="assets/img/shape/fot-sh1.png" alt=""></span>
+	<span class="ins-footer-shape2 position-absolute"><img src="assets/img/shape/fot-sh2.png" alt=""></span>
+	<div class="container">
+		<div class="ins-footer-logo-newslatter d-flex flex-wrap align-items-center justify-content-between pb-5 border-bottom mb-5"> <!-- Made flexible and added padding/border -->
+			<div class="ins-footer-email mb-3 mb-lg-0">
+				Email us at: <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a> <!-- Updated Email -->
+			</div>
+			<div class="ins-footer-logo position-relative text-center mb-3 mb-lg-0">
+                <!-- Logo Image (Optional - uncomment if you have a footer logo) -->
+				<!-- <a href="index.html"><img src="assets/img/logo/ist-logo-footer.svg" alt="IST Logo" style="max-height: 45px;"></a> -->
+                <!-- Text Logo/Tagline -->
+				<h4 class="mt-2 mb-0" style="color: #0f0f2d;">Inovate Solution Technology</h4>
+				<p class="mb-0 small text-secondary">Empowering businesses through innovative technology solutions.</p>
+			</div>
+            <div class="ins-footer-cta mb-3 mb-lg-0">
+                <!-- Optional: Add a small CTA like phone number here if desired -->
+                <span class="text-secondary me-2"><i class="fas fa-phone-alt theme-color"></i></span> <a href="tel:+917200699077">+91 7200699077</a>
+            </div>
+		</div>
+
+		<!-- Footer Widgets/Links -->
+		<div class="row mb-5">
+			<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				<div class="footer-widget">
+					<h5 class="widget-title">Navigation</h5>
+					<ul class="list-unstyled footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				 <div class="footer-widget">
+					<h5 class="widget-title">Services</h5>
+					<ul class="list-unstyled footer-links">
+						<!-- Assuming your services page has sections with these IDs -->
+						<li><a href="services.html#it-consulting">IT Consulting</a></li>
+						<li><a href="services.html#software-development">Software Development</a></li>
+						<li><a href="services.html#cloud-solutions">Cloud Solutions</a></li>
+						<li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+						<!-- Add more service links if needed, adjust hrefs as necessary -->
+                        <!-- <li><a href="services.html#cybersecurity">Cybersecurity</a></li> -->
+					</ul>
+				</div>
+			</div>
+			 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				 <div class="footer-widget">
+					<h5 class="widget-title">Contact Us</h5>
+					<address class="mb-0">
+						Jankit Nagar B Zone<br>
+						Kadachanenthal, Madurai<br>
+						<abbr title="Phone">P:</abbr> <a href="tel:+917200699077">+91 7200699077</a><br>
+						<abbr title="Email">E:</abbr> <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a>
+					</address>
+				</div>
+			</div>
+			 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				 <div class="footer-widget">
+					 <h5 class="widget-title">Follow Us</h5>
+					 <!-- Reuse social icons -->
+					 <ul class="social-box list-unstyled d-flex">
+						<li class="me-3"><a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a></li>
+						<li class="me-3"><a href="#" class="fab fa-twitter" aria-label="Twitter"></a></li>
+						<li class="me-3"><a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a></li>
+						<li class="me-3"><a href="#" class="fab fa-instagram" aria-label="Instagram"></a></li>
+                        <!-- Add other relevant social links -->
+					 </ul>
+					 <!-- Optional: Instagram Feed Placeholder (kept hidden) -->
+					 <div class="ins-footer-instagram text-center ul-li mt-4 d-none">
+						<!-- ... insta images ... -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ins-footer-copyright d-flex flex-wrap justify-content-between align-items-center pt-4 pb-4 border-top"> <!-- Added padding & border & align-items -->
+			<div class="ins-footer-copyright-text mb-2 mb-md-0">
+				© 2025 <a href="index.html">Inovate Solution Technology</a>. All rights reserved. <!-- Updated Copyright -->
+			</div>
+			<div class="ins-copy-right-menu ul-li">
+				<ul class="list-inline mb-0">
+					<li class="list-inline-item me-3"><a href="#">Terms and conditions</a></li>
+					<li class="list-inline-item"><a href="#">Privacy policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End of Footer section -->
+
+<!-- JS Library Imports -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script> <!-- If using jQuery UI features -->
+<script src="assets/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap 5 includes Popper -->
+<script src="assets/js/appear.js"></script> <!-- For element appearance triggers -->
+<script src="assets/js/slick.min.js"></script> <!-- Use .min.js for production -->
+<script src="assets/js/wow.min.js"></script> <!-- For animations -->
+<script src="assets/js/knob.js"></script> <!-- If using Knob charts -->
+<script src="assets/js/jquery.filterizr.js"></script> <!-- If using Filterizr -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script> <!-- For layout after images load -->
+<script src="assets/js/rbtools.min.js"></script> <!-- Revolution Slider tools -->
+<script src="assets/js/rs6.min.js"></script> <!-- Revolution Slider main -->
+<script src="assets/js/jarallax.js"></script> <!-- For parallax backgrounds -->
+<script src="assets/js/isotope.pkgd.min.js"></script> <!-- For masonry layouts -->
+<script src="assets/js/jquery.counterup.min.js"></script> <!-- For counter animations -->
+<script src="assets/js/waypoints.min.js"></script> <!-- Dependency for CounterUp -->
+<script src="assets/js/jquery.marquee.min.js"></script> <!-- For text marquees -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script> <!-- For image/video popups -->
+<script src="assets/js/jquery.nice-select.min.js"></script> <!-- For custom selects -->
+<script src="assets/js/roundslider.min.js"></script> <!-- Use .min.js for production -->
+<script src="assets/js/script.js"></script> <!-- Your template's main script file -->
+
+<script>
+	// Ensure WOW.js is initialized (often done in script.js, but safe to add here)
+	$(document).ready(function(){
+		if (typeof WOW === 'function') {
+			new WOW().init();
+		}
+	});
+</script>
+
+</body>
+</html>

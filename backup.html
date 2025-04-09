@@ -40,12 +40,23 @@
 			<div class="top-slug-more">
 				<!-- Removed insurance promo message -->
 			</div>
-
+			<div class="top-language-login d-flex align-items-center">
+				<!-- Language selector kept, remove if not needed -->
+				<div class="top-language">
+					<img src="assets/img/shape/t-icon3.png" alt="">
+					<select name="#">
+						<option value="#">English</option>
+						<option value="#">Tamil</option>
+					</select>
+				</div>
+				<div class="top-login">
+					<button>Login/Sign in</button> <!-- Kept Login -->
+				</div>
+			</div>
 		</div>
 		<div class="in-header-main-menu-content d-flex align-items-center justify-content-between">
 			<div class="brand-logo">
-				<!-- *** MODIFIED LINE BELOW: Increased max-height from 50px to 65px *** -->
-				<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo" style="max-height: 65px;"></a> <!-- TODO: Add IST Logo. Adjusted style for size. -->
+				<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo"></a> <!-- TODO: Add IST Logo -->
                 <!-- Fallback text if image fails: <a href="index.html" style="font-size: 24px; font-weight: bold; color: #0f0f2d;">IST</a> -->
 			</div>
 			<div class="in-header-menu-cta-sidebar d-flex align-items-center justify-content-center">
@@ -56,12 +67,26 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="products.html">Products</a></li>
 							<li><a href="services.html">Services</a></li>
-							<!-- <li><a href="contact.html">Contact</a></li> --> <!-- Contact is now the 'Get In Touch' button -->
+							<li><a href="contact.html">Contact</a></li>
 							<!-- Removed complex dropdowns -->
 						</ul>
 					</nav>
 				</div>
-
+				<div class="in-header-search-sidebar-cta d-flex align-items-center">
+					<div class="in-sidebar-btn navSidebar-button"> <!-- Sidebar button -->
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="in-header-search"> <!-- Search button -->
+						<button class="search-btn"><i class="far fa-search"></i></button>
+					</div>
+					<div class="in-header-cta"> <!-- Phone CTA -->
+						<span class="hd-title text-uppercase">phone</span>
+						<span class="hd-value text-uppercase">+91 7200699077</span> <!-- Updated Phone -->
+					</div>
+				</div>
 			</div>
 			<div class="in-header-cart-get-btn d-flex align-items-center">
 				<!-- Removed Cart -->
@@ -81,10 +106,15 @@
 						<i class="fal fa-times"></i>
 					</div>
 					<div class="m-brand-logo">
-						<a href="index.html"><img src="assets/img/logo/ist-logo.svg" alt="IST Logo"></a> <!-- TODO: Add Mobile IST Logo -->
+						<a href="index.html"><img src="assets/img/logo/ist-logo-mobile.png" alt="IST Logo"></a> <!-- TODO: Add Mobile IST Logo -->
                         <!-- Fallback text: <a href="index.html" style="font-size: 20px; font-weight: bold; color: #0f0f2d;">IST</a> -->
 					</div>
-					
+					<div class="in-m-search">
+						<form action="#">
+							<input type="text" name="search" placeholder="Search..">
+							<button type="submit"><i class="far fa-search"></i></button>
+						</form>
+					</div>
 					<nav class="mobile-main-navigation clearfix ul-li">
 						<ul id="m-main-nav" class="nav navbar-nav clearfix">
 							<li><a href="index.html">Home</a></li>
@@ -182,15 +212,12 @@
 
 <!-- Start of Hero Section (Replaces Slider)
 	============================================= -->
-<section id="ist-hero" class="ist-hero-section position-relative" style="background: #ff870066; background-size: cover; background-position: center; padding: 200px 0; text-align: center; color: #120000;"> <!-- UPDATED background-image URL -->
+<section id="ist-hero" class="ist-hero-section position-relative" style="background-image: url('assets/img/bg/hero-background.jpg'); background-size: cover; background-position: center; padding: 200px 0; text-align: center; color: #fff;"> <!-- TODO: Replace with actual Hero Background -->
     <div class="container">
-        <!-- Optional: Add overlay div here if needed for text readability
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
-        -->
-        <div class="ist-hero-content wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms" style="position: relative; z-index: 2;"> <!-- Ensure content is above overlay -->
-            <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Innovating from Imagination</h1> <!-- Adjusted text shadow slightly -->
-            <p style="font-size: 1.5rem; margin-bottom: 40px; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">Your Trusted Partner in IT Excellence</p> <!-- Adjusted text shadow slightly -->
-            <!-- <a href="contact.html" class="btn btn-primary btn-lg" style="padding: 15px 30px; font-size: 1.2rem; background-color: #18a78cf6; border-color: #f8f8f8;">Contact us</a> -->
+        <div class="ist-hero-content wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+            <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Innovating from Imagination</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 40px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Your Trusted Partner in IT Excellence</p>
+            <a href="contact.html" class="btn btn-primary btn-lg" style="padding: 15px 30px; font-size: 1.2rem; background-color: #056251; border-color: #056251;">Get Started</a>
         </div>
     </div>
 </section>
@@ -199,7 +226,7 @@
 
 <!-- Start of Core Services Section (Replaces Feature section)
 	============================================= -->
-	<section id="ist-core-services" class="ins-feature-section py-5"> <!-- Added Bootstrap padding py-5 -->
+	<section id="ist-core-services" class="ins-feature-section section-padding"> <!-- Added padding class -->
 		<div class="container">
 			<div class="ins-section-title text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" style="margin-bottom: 60px;">
 				<!-- Removed counter -->
@@ -210,140 +237,140 @@
 				<div class="row justify-content-center">
 					<!-- Service 1: IT Consulting -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4"> <!-- Added mb-4 for spacing on smaller screens -->
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;"> <!-- Generic icon styling -->
 									<i class="fas fa-users-cog fa-3x" style="color: #056251;"></i> <!-- Example Icon -->
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">IT Consulting</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#consulting">IT Consulting</a></h3>
 								<p>Expert guidance to align technology with your business objectives.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#consulting"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- Service 2: Software Development -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-laptop-code fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Software Development</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#software">Software Development</a></h3>
 								<p>Custom, scalable software solutions tailored to your needs.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#software"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- Service 3: Cloud Solutions -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-cloud-upload-alt fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Cloud Solutions</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#cloud">Cloud Solutions</a></h3>
 								<p>Seamless cloud migration, deployment, and management.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#cloud"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- Service 4: Digital Transformation -->
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-sync-alt fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Digital Transformation</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#digital">Digital Transformation</a></h3>
 								<p>Empowering businesses with automation and innovation.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#digital"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
                      <!-- Row Break or continue for more services -->
-                     <!-- <div class="w-100 d-none d-lg-block mt-4"></div> Spacer for next row on larger screens - removed as mb-4 handles spacing -->
+                     <div class="w-100 d-none d-lg-block mt-4"></div> <!-- Spacer for next row on larger screens -->
 
                      <!-- Service 5: Data Analytics & AI -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-chart-line fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Data Analytics & AI</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#data">Data Analytics & AI</a></h3>
 								<p>Actionable insights and intelligent solutions for growth.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#data"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
                      <!-- Service 6: Web & Mobile Development -->
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-mobile-alt fa-3x" style="color: #056251;"></i> <!-- Combined icon -->
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Web & Mobile Development</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#webmobile">Web & Mobile Development</a></h3>
 								<p>User-friendly websites and mobile apps to enhance engagement.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#webmobile"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
                      <!-- Service 7: Cybersecurity -->
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-shield-alt fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Cybersecurity</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#security">Cybersecurity</a></h3>
 								<p>Comprehensive protection against evolving threats.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#security"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
                      <!-- Service 8: Managed IT Services -->
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">
-						<div class="ins-feature-item mb-4">
+						<div class="ins-feature-item">
 							<div class="ins-feature-img-area position-relative text-center mb-3">
 								<div class="feature-icon d-inline-block p-3" style="background-color: #eafaf6; border-radius: 50%;">
 									<i class="fas fa-headset fa-3x" style="color: #056251;"></i>
 								</div>
 							</div>
 							<div class="ins-feature-text pera-content text-center">
-								<h3><a href="contact.html">Managed IT Services</a></h3> <!-- MODIFIED HREF -->
+								<h3><a href="services.html#managedit">Managed IT Services</a></h3>
 								<p>Proactive IT support for smooth operations and reliability.</p>
 							</div>
 							<div class="ins-feature-more text-center mt-3">
-								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="contact.html"><i class="fas fa-long-arrow-right"></i></a> <!-- MODIFIED HREF -->
+								<a class="arrow-circle position-relative d-inline-flex align-items-center justify-content-center" href="services.html#managedit"><i class="fas fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -356,7 +383,7 @@
 
 <!-- Start of Technologies Section (Replaces Sponsor/FunFact)
 	============================================= -->
-<section id="ist-technologies" class="ist-technologies-section py-5 bg-light"> <!-- Added py-5 -->
+<section id="ist-technologies" class="ist-technologies-section section-padding bg-light"> <!-- Added padding and background -->
     <div class="container">
         <div class="ins-section-title text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" style="margin-bottom: 60px;">
             <h2>Technologies We Master</h2>
@@ -416,9 +443,9 @@
 
 <!-- Start of Internship Programs Section (Replaces Insurance Category)
 	============================================= -->
-<section id="ist-internships" class="ist-internships-section py-5 position-relative"> <!-- Added py-5 -->
+<section id="ist-internships" class="ist-internships-section section-padding position-relative">
     <span class="side-shape1 position-absolute" style="opacity: 0.1;"><img src="assets/img/shape/side-sh.png" alt=""></span> <!-- Kept shape, adjust style -->
-	<span class="side-shape2 position-absolute" style="opacity: 0.1;"><img src="assets/img/shape/ft-man2.png" alt=""></span> <!-- Kept shape, adjust style -->
+		<span class="side-shape2 position-absolute" style="opacity: 0.1;"><img src="assets/img/shape/ft-man2.png" alt=""></span> <!-- Kept shape, adjust style -->
     <div class="container">
         <div class="ins-section-title text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" style="margin-bottom: 60px;">
             <h2>Internship Programs</h2>
@@ -433,7 +460,7 @@
                         <h4>Software Development</h4>
                         <p>Learn to build robust software solutions using modern technologies.</p>
                         <p><strong>Duration:</strong> 3-6 months</p>
-                        <a href="contact.html?interest=internship_software" class="btn btn-outline-primary mt-2">Contact us →</a> <!-- KEPT AS IS (already links to contact) -->
+                        <a href="contact.html?interest=internship_software" class="btn btn-outline-primary mt-2">Contact us →</a>
                     </div>
                 </div>
                 <!-- Internship 2: UI/UX Design -->
@@ -443,7 +470,7 @@
                         <h4>UI/UX Design</h4>
                         <p>Master the art of creating beautiful and functional user interfaces.</p>
                         <p><strong>Duration:</strong> 3-6 months</p>
-                        <a href="contact.html?interest=internship_uiux" class="btn btn-outline-primary mt-2">Contact us →</a> <!-- KEPT AS IS (already links to contact) -->
+                        <a href="contact.html?interest=internship_uiux" class="btn btn-outline-primary mt-2">Contact us →</a>
                     </div>
                 </div>
                 <!-- Internship 3: Cloud Computing -->
@@ -453,7 +480,7 @@
                         <h4>Cloud Computing</h4>
                         <p>Get hands-on experience with cloud technologies and DevOps practices.</p>
                         <p><strong>Duration:</strong> 3-6 months</p>
-                        <a href="contact.html?interest=internship_cloud" class="btn btn-outline-primary mt-2">Contact us →</a> <!-- KEPT AS IS (already links to contact) -->
+                        <a href="contact.html?interest=internship_cloud" class="btn btn-outline-primary mt-2">Contact us →</a>
                     </div>
                 </div>
             </div>
@@ -464,17 +491,17 @@
 
 <!-- Start of Career Opportunities Section (Replaces Key Feature)
 	============================================= -->
-<section id="ist-careers" class="ins-key-feature-section py-5 bg-light"> <!-- Added py-5 -->
+<section id="ist-careers" class="ins-key-feature-section section-padding bg-light"> <!-- Added padding and bg -->
 		<div class="container">
             <div class="ins-section-title text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms" style="margin-bottom: 60px;">
                 <h2>Career Opportunities</h2>
                 <h3>Join our innovative team and shape the future.</h3>
             </div>
-			<div class="">
+			<div class="ins-key-feature-content">
 				<div class="row justify-content-center">
 					<!-- Career 1: Senior Software Engineer -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white shadow-sm"> <!-- Added styling -->
+						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white"> <!-- Added styling -->
 							<div class="ins-key-feature-icon mb-3">
 								<i class="fas fa-user-tie fa-3x" style="color: #056251;"></i> <!-- Example Icon -->
 							</div>
@@ -484,12 +511,12 @@
                                 <span class="badge bg-secondary me-2">Full-time</span>
                                 <span class="badge bg-info">Madurai</span>
 							</div>
-                            <a href="contact.html" class="stretched-link"></a> <!-- MODIFIED HREF -->
+                            <a href="careers.html#sse" class="stretched-link"></a> <!-- Makes whole card clickable -->
 						</div>
 					</div>
 					<!-- Career 2: UX Designer -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white shadow-sm">
+						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white">
 							<div class="ins-key-feature-icon mb-3">
 								<i class="fas fa-palette fa-3x" style="color: #056251;"></i>
 							</div>
@@ -499,12 +526,12 @@
                                 <span class="badge bg-secondary me-2">Full-time</span>
                                 <span class="badge bg-info">Madurai</span>
 							</div>
-                             <a href="contact.html" class="stretched-link"></a> <!-- MODIFIED HREF -->
+                             <a href="careers.html#uxd" class="stretched-link"></a>
 						</div>
 					</div>
 					<!-- Career 3: Cloud Architect -->
 					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white shadow-sm">
+						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white">
 							<div class="ins-key-feature-icon mb-3">
 								<i class="fas fa-cloud-meatball fa-3x" style="color: #056251;"></i>
 							</div>
@@ -514,12 +541,12 @@
                                 <span class="badge bg-secondary me-2">Full-time</span>
                                 <span class="badge bg-info">Madurai</span>
 							</div>
-                             <a href="contact.html" class="stretched-link"></a> <!-- MODIFIED HREF -->
+                             <a href="careers.html#ca" class="stretched-link"></a>
 						</div>
 					</div>
                     <!-- Career 4: DevOps Engineer -->
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
-						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white shadow-sm">
+						<div class="ins-key-feature-item position-relative text-center p-4 border rounded mb-4 bg-white">
 							<div class="ins-key-feature-icon mb-3">
 								<i class="fas fa-cogs fa-3x" style="color: #056251;"></i>
 							</div>
@@ -529,12 +556,12 @@
                                 <span class="badge bg-secondary me-2">Full-time</span>
                                 <span class="badge bg-info">Madurai</span>
 							</div>
-                             <a href="contact.html" class="stretched-link"></a> <!-- MODIFIED HREF -->
+                             <a href="careers.html#de" class="stretched-link"></a>
 						</div>
 					</div>
 				</div>
                 <div class="text-center mt-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-                    <a href="contact.html" class="btn btn-success">View All Positions</a> <!-- MODIFIED HREF -->
+                    <a href="careers.html" class="btn btn-success">View All Positions</a>
                 </div>
 			</div>
 		</div>
@@ -543,12 +570,12 @@
 
 <!-- Start of CTA Section (Generic)
 	============================================= -->
-<section id="ist-cta" class="ist-cta-section py-5 text-center text-white position-relative" style="background-image: url('assets/img/bg/cta-background.jpg'); background-size: cover; background-position: center;"> <!-- Added py-5. TODO: Replace with actual CTA Background -->
+<section id="ist-cta" class="ist-cta-section section-padding text-center text-white position-relative" style="background-image: url('assets/img/bg/cta-background.jpg'); background-size: cover; background-position: center;"> <!-- TODO: Replace with actual CTA Background -->
     <div class="container position-relative" style="z-index: 2;">
         <div class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
             <h2>Ready to Transform Your Business?</h2>
             <p class="lead my-4">Let's work together to bring your vision to life.</p>
-            <a href="contact.html" class="btn btn-light btn-lg" style="padding: 15px 30px; font-size: 1.2rem; background-color: rgba(5, 98, 81, 0.7);">Contact Us</a> <!-- KEPT AS IS (already links to contact) -->
+            <a href="contact.html" class="btn btn-light btn-lg" style="padding: 15px 30px; font-size: 1.2rem;">Contact Us</a>
         </div>
     </div>
     <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(5, 98, 81, 0.7); z-index: 1;"></div> <!-- Overlay for text visibility -->
@@ -558,7 +585,7 @@
 
 <!-- Start of Testimonial section (Structure Kept, Content Placeholder)
 	============================================= -->
-	<section id="ins-testimonial" class="ins-testimonial-section position-relative py-5"> <!-- Added py-5 -->
+	<section id="ins-testimonial" class="ins-testimonial-section position-relative section-padding">
 		<!-- Shapes kept for layout, might need visual adjustment -->
 		<span class="ins-testimonial-side-shape1 position-absolute wow slideInRight" data-wow-delay="600ms" data-wow-duration="1000ms"><img src="assets/img/shape/tst-men.png" alt=""></span>
 		<span class="ins-testimonial-side-shape2 position-absolute wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><img src="assets/img/shape/tst-sh2.png" alt=""></span>
@@ -582,7 +609,7 @@
                     <!-- Testimonial Content Slider -->
                     <div class="ins-testimonial-slider-for">
                         <div class="ins-testimonial-for-item">
-                            <div class="ins-testimonial-for-area position-relative p-5 bg-light rounded shadow-sm"> <!-- Added styling -->
+                            <div class="ins-testimonial-for-area position-relative p-5 bg-light rounded"> <!-- Added styling -->
                                 <span class="ins-test-area-shape position-absolute" style="opacity: 0.1;"><img src="assets/img/shape/test-sh.png" alt=""></span>
                                 <div class="inner-text mb-4">
                                     "IST delivered an exceptional software solution that significantly improved our workflow. Their team was professional, responsive, and highly skilled. Highly recommended!" <!-- Placeholder Text -->
@@ -599,7 +626,7 @@
                             </div>
                         </div>
                         <div class="ins-testimonial-for-item">
-                           <div class="ins-testimonial-for-area position-relative p-5 bg-light rounded shadow-sm">
+                           <div class="ins-testimonial-for-area position-relative p-5 bg-light rounded">
                                 <span class="ins-test-area-shape position-absolute" style="opacity: 0.1;"><img src="assets/img/shape/test-sh.png" alt=""></span>
                                 <div class="inner-text mb-4">
                                     "Working with Inovate Solution Technology on our cloud migration was seamless. Their expertise and support were invaluable throughout the process." <!-- Placeholder Text -->
@@ -626,8 +653,8 @@
 
 <!-- Start of Social section (Kept)
 	============================================= -->
-	<section id="ins-social" class="ins-social-section py-4"> <!-- Added py-4 for slightly less padding -->
-		<div class="ins-social-content d-flex flex-wrap justify-content-center align-items-center"> <!-- Added flex-wrap and justify-content-center -->
+	<section id="ins-social" class="ins-social-section">
+		<div class="ins-social-content d-flex align-items-center">
 			<!-- Update hrefs for IST social profiles -->
 			<div class="ins-social-item"><a href="#"><img src="assets/img/logo/fb.png" alt=""><span>Facebook</span></a></div>
 			<div class="ins-social-item"><a href="#"><img src="assets/img/logo/ln.png" alt=""><span>LinkedIn</span></a></div>
@@ -641,7 +668,7 @@
 
 <!-- Start of Footer section
 	============================================= -->
-	<footer id="ins-footer" class="ins-footer-section position-relative pt-5 bg-light"> <!-- Added padding top & bg-light -->
+	<footer id="ins-footer" class="ins-footer-section position-relative pt-5"> <!-- Added padding -->
 		<!-- Shapes kept -->
 		<span class="ins-footer-shape1 position-absolute"><img src="assets/img/shape/fot-sh1.png" alt=""></span>
 		<span class="ins-footer-shape2 position-absolute"><img src="assets/img/shape/fot-sh2.png" alt=""></span>
@@ -651,11 +678,16 @@
 					Email us at: <a href="mailto:Innovatesolutiontechnology@gmail.com">Innovatesolutiontechnology@gmail.com</a> <!-- Updated Email -->
 				</div>
 				<div class="ins-footer-logo position-relative text-center mb-3 mb-lg-0">
-
+					<a href="index.html"><img src="assets/img/logo/ist-logo-footer.svg" alt="Inovate Solution Technology Logo" style="max-height: 50px;"></a> <!-- TODO: Add IST Footer Logo -->
                     <h4 class="mt-2 mb-0">Inovate Solution Technology</h4>
 					<p class="mb-0 small">Empowering businesses through innovative technology solutions.</p>
 				</div>
-
+				<div class="ins-footer-newslatter position-relative mb-3 mb-lg-0">
+					<form action="#" method="get">
+						<input type="email" name="email" placeholder="Enter Email for Newsletter">
+						<button>Sign Up</button>
+					</form>
+				</div>
 			</div>
 
             <!-- Footer Widgets/Links -->
@@ -718,7 +750,7 @@
             </div>
 
 
-			<div class="ins-footer-copyright d-flex flex-wrap justify-content-between pt-4 pb-4 border-top"> <!-- Added padding & border -->
+			<div class="ins-footer-copyright d-flex flex-wrap justify-content-between pt-4 border-top"> <!-- Added padding & border -->
 				<div class="ins-footer-copyright-text mb-2 mb-md-0">
 					© 2025 <a href="index.html">Inovate Solution Technology</a>. All rights reserved. <!-- Updated Copyright -->
 				</div>
